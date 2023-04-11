@@ -1,0 +1,75 @@
+.footer{
+    background-color: #3A4247;
+    width:100%; 
+    height: 115px;
+    padding: 32px 15px;
+    display: flex;
+    justify-content: center;
+    &_wrp{
+        width: 100%;
+        max-width: 1150px;
+        display:flex;
+        justify-content: space-between;
+        &_left{
+            &_top{
+                p{
+                    text-decoration:none;
+                    font-weight:500;
+                    color: #777f82;
+                    font-size:12px;
+                    margin-bottom: 12px;
+                    span{
+                        color: white;
+                        font-size: 14px;
+                    }
+
+                }
+            }
+            &_bottom{
+                background-color: #292E32;
+                width: fit-content;
+                padding: 5px 15px;
+                border-radius: 10px;
+                &_info{
+                    display: flex;
+                    gap: 20px;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 13px;
+                        font-weight: 600;
+                        &:hover{
+                            color: orange;
+                        }
+                    }
+                }
+            }
+        }
+        &_right{
+            display: flex;
+            gap: 15px;
+            padding-top: 5px;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: rgba(0,0,0,.5);
+                &:hover{
+                    background-color: black;
+                }
+                img{
+                    width: 25px;
+                    height: auto;
+                }
+                svg{
+                    fill: white;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header  class="header">
+        <div class="header_wrp">
+            <div class="header_wrp_left">
+                <picture>
+                    <a href="#">
+                        <img src="./resources/img/logo.webp" alt="">
+                    </a>
+                </picture>
+            </div>
+            <div class="header_wrp_right">
+                <a href="#">inicio</a>
+                <a href="#">directorio anime</a>
+                <div class="header_wrp_right_search">
+                    <input type="text" placeholder="Buscar...">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                </div>
+                <button id="header_btn_login"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" fill="#23262a"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8C18 11.3137 15.3137 14 12 14C8.68629 14 6 11.3137 6 8Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.43094 16.9025C7.05587 16.2213 9.2233 16 12 16C14.771 16 16.9351 16.2204 18.5586 16.8981C20.3012 17.6255 21.3708 18.8613 21.941 20.6587C22.1528 21.3267 21.6518 22 20.9592 22H3.03459C2.34482 22 1.84679 21.3297 2.0569 20.6654C2.62537 18.8681 3.69119 17.6318 5.43094 16.9025Z" fill="white"/>
+                    </svg>login
+                </button>
+                <a class="header_wrp_right_facebook" href="#"><img src="./resources/img/face.png" alt=""></a>
+            </div>
+        </div>
+        <div class="login" id="header_login" >
+            <div class="login_wrp">
+              <p>Iniciar sesion</p>
+              <input name="usuario" type="text" placeholder="E-Mail" required>   
+              <input name="contraseña" type="password" placeholder="contraseña" required>
+              <button style="background-color: #01bcf3;">INICIAR SESIÓN</button>
+              <button style="background-color: #45619d;"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">    <path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z"></path></svg> Iniciar sesion con FB</button>
+              <div class="login_wrp_txt">
+                <a href="#">Registrate</a>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+              </div>
+            </div>
+        </div>
+        <a href="#" class="header_alert">
+            <p>Naruto shipudden <span>esta en vivo</span></p>
+            <i class="header_alert_live"></i>
+        </a>
+    </header>
+    <main class="container">
+        <div class="container_wrp">
+            <div class="container_wrp_left">
+                <div class="container_wrp_left_title">
+                    <p>ANIMES EN EMISIÓN</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="play"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"/></svg>
+                </div>
+                <ul class="list">
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                    <li class="list_content">
+                    <a href="#">
+                    <div class="list_content_left">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#cbcbcb" height="15px" width="15px" version="1.1" id="Layer_1" viewBox="0 0 459 459" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    <h2>One Piece</h2> </div>
+                    <span>anime</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="container_wrp_right">
+                <div class="container_wrp_right_title">
+                    <h2>Últimos episodios</h2>
+                    <span>Hoy</span>
+                </div>
+                <section class="section_wrap_1">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./resources/img/animes/3801.webp" alt="anime">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="21px" width="21px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16   "/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                <span>Episodio 1</span>
+                                <h2>Kimetsu no yaiba</h2>
+                                <div class="gradient"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="container_wrp_right_title">
+                    <img src="./resources/img/pngwing.com.png" alt="Esfera del dragon">
+                    <h2>Últimos animes agregados</h2>
+                    <span>Hoy</span>
+                </div>
+                <section class="section_wrap_2">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="_23_Play" data-name="23 Play">
+                                    <path id="Path_30" data-name="Path 30" d="M256,512C114.625,512,0,397.375,0,256,0,114.609,114.625,0,256,0S512,114.609,512,256C512,397.375,397.375,512,256,512Zm0-448C149.969,64,64,149.969,64,256s85.969,192,192,192,192-85.969,192-192S362.031,64,256,64Zm-64,96,160,96L192,352Z" fill-rule="evenodd"/>
+                                </svg>
+                                <img src="./resources/img/animes/3802.jpeg" alt="anime">
+                                <span class="estreno">Estreno</span>
+                                <span>Anime</span>
+                                <h2>Kimetsu no Yaiba: katanakaji no sato-hen</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_wrp"> 
+            <div class="footer_wrp_left">
+                <div class="footer_wrp_left_top">
+                    <p><span>Anime Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores</p>
+                </div>
+                <div class="footer_wrp_left_bottom">
+                    <div class="footer_wrp_left_bottom_info">
+                        <a href="#">Terminos y Condiciones</a>
+                        <a href="#">Politicas de Privacidad</a>
+                        <a href="#">Sobre AnimeFLV</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer_wrp_right">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">    <path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z"/></svg>
+                </a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px" fill-rule="evenodd"><path fill-rule="evenodd" d="M 13 5 L 16 14 L 16 20 L 18 20 L 18 14 L 21 5 L 19 5 L 17 11 L 15 5 Z M 24 9 C 22.933594 9 22.410156 9.167969 21.757813 9.703125 C 21.132813 10.230469 20.960938 10.636719 21 12 L 21 17 C 21 17.996094 21.164063 18.652344 21.765625 19.234375 C 22.390625 19.816406 22.980469 20 24 20 C 25.066406 20 25.648438 19.816406 26.25 19.234375 C 26.875 18.675781 27 17.996094 27 17 L 27 12 C 27 11.117188 26.84375 10.28125 26.238281 9.722656 C 25.613281 9.148438 24.96875 9 24 9 Z M 29 9 L 29 18 C 29 18.972656 29.980469 20 31 20 C 32.019531 20 32.558594 19.488281 33 19 L 33 20 L 35 20 L 35 9 L 33 9 L 33 17 C 32.988281 17.683594 32.183594 18 32 18 C 31.792969 18 31 17.957031 31 17 L 31 9 Z M 24 11 C 24.300781 11 25 10.996094 25 12 L 25 17 C 25 17.96875 24.324219 18 24 18 C 23.699219 18 23 17.988281 23 17 L 23 12 C 23 11.183594 23.433594 11 24 11 Z M 10 22 C 6.40625 22 4 24.382813 4 28 L 4 37.5 C 4 41.117188 6.40625 44 10 44 L 40 44 C 43.59375 44 46 41.617188 46 38 L 46 28 C 46 24.382813 43.59375 22 40 22 Z M 12 26 L 18 26 L 18 28 L 16 28 L 16 40 L 14 40 L 14 28 L 12 28 Z M 26 26 L 28 26 L 28 30 C 28.230469 29.640625 28.574219 29.355469 28.902344 29.195313 C 29.222656 29.03125 29.546875 28.9375 29.875 28.9375 C 30.523438 28.9375 31.03125 29.171875 31.378906 29.609375 C 31.726563 30.050781 32 30.636719 32 31.5 L 32 37.5 C 32 38.242188 31.75 38.703125 31.421875 39.097656 C 31.101563 39.492188 30.621094 39.992188 30 40 C 28.949219 40.011719 28.386719 39.449219 28 39 L 28 40 L 26 40 Z M 18 29 L 20 29 L 20 37 C 20 37.230469 20.269531 38.007813 21 38 C 21.8125 37.992188 21.820313 37.234375 22 37 L 22 29 L 24 29 L 24 40 L 22 40 L 22 39 C 21.628906 39.4375 21.4375 39.574219 21.019531 39.78125 C 20.605469 40.015625 20.183594 40 19.792969 40 C 19.308594 40 18.757813 39.5625 18.5 39.234375 C 18.269531 38.933594 18 38.625 18 38 Z M 36.199219 29 C 37.148438 29 37.816406 29.203125 38.320313 29.734375 C 38.835938 30.265625 39 30.886719 39 31.886719 L 39 35 L 35 35 L 35 36.546875 C 35 37.105469 35.074219 37.460938 35.21875 37.671875 C 35.355469 37.902344 35.632813 38.003906 36 38 C 36.40625 37.996094 36.664063 37.914063 36.800781 37.730469 C 36.941406 37.566406 37 37.101563 37 36.5 L 37 36 L 39 36 L 39 36.59375 C 39 37.683594 38.914063 38.496094 38.375 39.027344 C 37.867188 39.585938 37.074219 39.84375 36.035156 39.84375 C 35.085938 39.84375 34.34375 39.5625 33.8125 38.984375 C 33.28125 38.40625 33.003906 37.613281 33.003906 36.59375 L 33.003906 31.886719 C 33.003906 30.980469 33.320313 30.308594 33.902344 29.710938 C 34.371094 29.230469 35.25 29 36.199219 29 Z M 29 30.5 C 28.449219 30.5 28.007813 30.996094 28 31.5 L 28 37.5 C 28.007813 37.789063 28.449219 38 29 38 C 29.550781 38 30 37.574219 30 37.023438 L 30 32 C 30 31 29.550781 30.5 29 30.5 Z M 36 31 C 35.449219 31 35.007813 31.464844 35 32 L 35 33 L 37 33 L 37 32 C 37 31.386719 36.550781 31 36 31 Z"/></svg></a>
+            </div>
+
+        </div>
+    </footer>
+        <!--Script-->
+        <script src="./resources/js/menu.js"></script>
+</body>
+</html>
