@@ -175,7 +175,7 @@
     border-radius: 6px;
     z-index: 2;
     bottom: -300px;
-    right: calc(50% - 517px);
+    right: calc(50% - 417px);
     width: 270px;
     height: 306px;
     padding: 15px;
@@ -258,6 +258,33 @@
                         text-decoration: underline;
                     }
                 }
+            }
+        }
+    }
+    &.darkmode{
+        background-color: #30363b;
+        .login_wrp{
+            p{
+                color: #a9abad;
+                border-bottom: 2px solid #a9abad;
+            }
+            input{
+                background-color: #30363b;
+                border: 1px solid #a9abad;
+                color: #a9abad;
+                &::placeholder{
+                    color: #a9abad;
+                }
+            }
+            &_txt{
+                a{
+                    &:nth-child(2){
+                        color: #a9abad;
+                    }
+                }
+            }
+            &::before{
+                background-color: #30363b;
             }
         }
     }

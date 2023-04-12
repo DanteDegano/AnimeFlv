@@ -153,7 +153,7 @@
 }
 
 .container_wrp_left_title.darkmode p {
-  color: white;
+  color: #a9abad;
 }
 
 .container_wrp_left_title p {
@@ -173,11 +173,11 @@
 }
 
 .container_wrp_left .list.darkmode li a {
-  color: white;
+  color: #a9abad;
 }
 
 .container_wrp_left .list.darkmode li svg {
-  fill: white;
+  fill: #a9abad;
 }
 
 .container_wrp_left .list.darkmode li span {
@@ -274,7 +274,7 @@
 }
 
 .container_wrp_right_title.darkmode h2 {
-  color: white;
+  color: #a9abad;
 }
 
 .container_wrp_right_title img {
@@ -539,7 +539,7 @@
 }
 
 .section_wrap_2.darkmode ul li h2 {
-  color: white;
+  color: #a9abad;
 }
 
 .header {
@@ -818,7 +818,7 @@
   border-radius: 6px;
   z-index: 2;
   bottom: -300px;
-  right: calc(50% - 517px);
+  right: calc(50% - 417px);
   width: 270px;
   height: 306px;
   padding: 15px;
@@ -933,6 +933,45 @@
 
 .login_wrp_txt a:nth-child(2):hover {
   text-decoration: underline;
+}
+
+.login.darkmode {
+  background-color: #30363b;
+}
+
+.login.darkmode .login_wrp p {
+  color: #a9abad;
+  border-bottom: 2px solid #a9abad;
+}
+
+.login.darkmode .login_wrp input {
+  background-color: #30363b;
+  border: 1px solid #a9abad;
+  color: #a9abad;
+}
+
+.login.darkmode .login_wrp input::-webkit-input-placeholder {
+  color: #a9abad;
+}
+
+.login.darkmode .login_wrp input:-ms-input-placeholder {
+  color: #a9abad;
+}
+
+.login.darkmode .login_wrp input::-ms-input-placeholder {
+  color: #a9abad;
+}
+
+.login.darkmode .login_wrp input::placeholder {
+  color: #a9abad;
+}
+
+.login.darkmode .login_wrp_txt a:nth-child(2) {
+  color: #a9abad;
+}
+
+.login.darkmode .login_wrp::before {
+  background-color: #30363b;
 }
 
 .footer {
