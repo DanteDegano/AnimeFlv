@@ -107,18 +107,6 @@
                     display: flex;
                     align-items: center;
                     padding: 1px 5px;
-                    &::after{
-                        content: '';
-                        background-color: #01bcf3;
-                        position: absolute;
-                        top: -226px;
-                        left: -4px;
-                        right: -108px;
-                        bottom: -3px;
-                        opacity: .0;
-                        z-index: 3;
-                        border-radius: 4px;
-                    }
                 }
                 h2{
                     font-size: 13px;
@@ -183,7 +171,7 @@
                     fill: white;
                     opacity: 0;
                 }
-                &:hover{
+                /*&:hover{
                     span{
                         &::after{
                             opacity: 0.5;
@@ -204,7 +192,7 @@
                         opacity: 1;
                         z-index: 5;
                     }
-                }
+                }*/
             }
         }
     }
