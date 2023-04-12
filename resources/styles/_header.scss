@@ -95,6 +95,23 @@
                     fill: white; /* Cambia el color del svg */
                 }
             }
+            &_darkmode{
+                width: 80px;
+                height: 40px;
+                background-color: $darkmode;
+                border-radius: 20px;
+                padding: 5px 7px ;
+                border: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                &_btn{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+            }
         } 
     }
     &_alert{

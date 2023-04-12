@@ -112,11 +112,11 @@
                 h2{
                     font-size: 13px;
                     font-weight: 700;
-                    color: black;
                     text-decoration: none;
                     text-align: center;
                     line-height: 18px;
                     padding: 10px 20px;
+                    color: black;
                 }
                 a{
                     position: absolute;
@@ -161,28 +161,15 @@
                     fill: white;
                     opacity: 0;
                 }
-                /*&:hover{
-                    span{
-                        &::after{
-                            opacity: 0.5;
-                        }
-                    }
+            }
+        }
+        &.darkmode{
+            ul{
+                li{
                     h2{
-                        color: #01bcf3;
+                        color: white;
                     }
-                    & .estreno{
-                        &::after{
-                            opacity: 1;
-                        }
-                        &::before{
-                            opacity: 1;
-                        }
-                    }
-                    svg{
-                        opacity: 1;
-                        z-index: 5;
-                    }
-                }*/
+                }
             }
         }
     }
