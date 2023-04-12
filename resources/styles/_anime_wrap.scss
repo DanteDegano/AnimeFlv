@@ -75,14 +75,15 @@
         ul{
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 5px;
             li{
-                width: 190px;
+                width: 200px;
                 height: 340px;
                 position: relative;
                 list-style: none;
                 border-radius: 6px;
                 overflow: hidden;
+                padding: 15px 11px 0;
                 img{
                     border-radius: 6px;
                     border: 6px solid white;
@@ -127,39 +128,28 @@
                 }
                 & .estreno{
                     position: absolute;
-                    top: 10px;
-                    left: -18px;
-                    color: white;
-                    background-color: #01ae43;
-                    border-radius: 0;
-                    transform: rotate(-45deg);
+                    top: 1px;
+                    left: -9px;
                     padding: 4px 16px;
-                    height: auto;
-                    width: auto;
+                    height: 50px;
+                    width: 70px;
                     z-index: 4;
+                    padding: 0;
+                    background: none;
+                    img{
+                        width: 100%;
+                        border: none;
+                    }
                     &::before{
                         content: '';
-                        background-color: #016427;
-                        -webkit-transform: rotate(45deg);
-                        transform: rotate(45deg);
-                        height: 3px;
-                        width: 4px;
+                        width: 56px;
+                        height: 16px;
+                        background-color: white;
                         position: absolute;
-                        top: 19px;
-                        left: 1px;
-                        opacity: 1;
-                    }
-                    &::after{
-                        content: '';
-                        background-color: #016427;
-                        -webkit-transform: rotate(45deg);
-                        transform: rotate(45deg);
-                        height: 4px;
-                        width: 3px;
-                        position: absolute;
-                        top: 18px;
-                        left: 72px;
-                        opacity: 1;
+                        transform: rotate(-45deg);
+                        top: 8px;
+                        left: -2px;
+                        z-index: -1;
                     }
                 }
                 svg{
